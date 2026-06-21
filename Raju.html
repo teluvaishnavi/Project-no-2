@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #ff5722;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Food Delivery Application</h1>
+    <p>Order Your Favorite Food Online</p>
+</header>
+
+<nav>
+    <a href="#restaurants">Restaurants</a>
+    <a href="#orders">Orders</a>
+    <a href="#tracking">Delivery Tracking</a>
+</nav>
+
+<section id="restaurants">
+    <h2>Restaurants</h2>
+    <table>
+        <tr>
+            <th>Restaurant Name</th>
+            <th>Food Type</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td>Spicy Hub</td>
+            <td>Indian</td>
+            <td>4.5 ⭐</td>
+        </tr>
+        <tr>
+            <td>Pizza Palace</td>
+            <td>Italian</td>
+            <td>4.7 ⭐</td>
+        </tr>
+        <tr>
+            <td>Burger Town</td>
+            <td>Fast Food</td>
+            <td>4.3 ⭐</td>
+        </tr>
+    </table>
+</section>
+
+<section id="orders">
+    <h2>Orders</h2>
+
+    <form>
+        <label>Customer Name:</label><br><br>
+        <input type="text" placeholder="Enter Name"><br><br>
+
+        <label>Select Food:</label><br><br>
+        <select>
+            <option>Pizza</option>
+            <option>Burger</option>
+            <option>Biryani</option>
+            <option>Fried Rice</option>
+        </select><br><br>
+
+        <label>Quantity:</label><br><br>
+        <input type="number" min="1"><br><br>
+
+        <button type="submit">Place Order</button>
+    </form>
+</section>
+
+<section id="tracking">
+    <h2>Delivery Tracking</h2>
+
+    <table>
+        <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>FD101</td>
+            <td>Raju</td>
+            <td>Preparing</td>
+        </tr>
+        <tr>
+            <td>FD102</td>
+            <td>Kiran</td>
+            <td>Out for Delivery</td>
+        </tr>
+        <tr>
+            <td>FD103</td>
+            <td>Ramesh</td>
+            <td>Delivered</td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <p>© 2026 Food Delivery Application | Developed using HTML</p>
+</footer>
+
+</body>
+</html>
